@@ -1,0 +1,28 @@
+.weatherForecast {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+.weatherForecastDate {
+  text-align: center;
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.weatherForecastIcon {
+  display: block;
+  width: 85px;
+  height: 85px;
+  margin: 0 auto;
+}
+.weatherForecastTemperatures {
+  text-align: center;
+  color: rgb(238, 90, 90);
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+.weatherForecastTemperature {
+  padding: 0 10px;
+}
