@@ -10,7 +10,7 @@ export default function Footer() {
       </a>{" "}
       and is{" "}
       <a
-        href="https://github.com/Emilia188/weather-application"
+        href="https://github.com/Emilia188/weather-app"
         target="_blank"
         rel="noreferrer"
       >
@@ -18,7 +18,7 @@ export default function Footer() {
       </a>{" "}
       and{" "}
       <a
-        href="https://weather-application-emilia.vercel.app/"
+        href="https://weather-app-blue-sigma-68.vercel.app/"
         target="_blank"
         rel="noreferrer"
       >
