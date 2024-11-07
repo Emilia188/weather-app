@@ -5,7 +5,7 @@ import WeatherForecast from "./WeatherForecast";
 import Footer from "./Footer";
 import "./App.css";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <Header />
@@ -15,5 +15,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

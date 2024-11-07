@@ -5,7 +5,7 @@ export default function WeatherInfo() {
   return (
     <div class="weatherAppData">
       <div>
-        <h1 className="weatherAppCity">Belin</h1>
+        <h1 className="weatherAppCity">Berlin</h1>
         <p className="weatherAppDetails">
           <span id="time">Thursday 11:49</span>,
           <span id="discription"> overcast clouds</span>

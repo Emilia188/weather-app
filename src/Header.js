@@ -1,4 +1,5 @@
 import React from "react";
+import axios from "axios";
 import "./Header.css";
 export default function Header() {
   return (
@@ -9,7 +10,7 @@ export default function Header() {
         required
         className="searchFormInput"
       />
-      <input type="submit" value="Search" class="searchFormButton" />
+      <input type="submit" value="Search" className="searchFormButton" />
     </form>
   );
 }
