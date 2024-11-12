@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import FormattedDate from "./FormattedDate";
 import "./WeatherInfo.css";
 import axios from "axios";
 
@@ -6,41 +7,44 @@ export default function WeatherInfo(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
 
   function handleResponse(response) {
-    console.log(response.data);
     setWeatherData({
       ready: true,
       temperature: response.data.temperature.current,
       humidity: response.data.temperature.humidity,
-      date: "Thursday 11:49",
+      wind: response.data.wind.speed,
+      date: new Date(response.data.time * 1000),
       description: response.data.condition.description,
       iconUrl:
         "https://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png",
-      wind: response.data.wind.speed,
       city: response.data.city,
+      feelsLike: response.data.temperature.feels_like,
     });
   }
   if (weatherData.ready) {
     return (
       <div className="WeatherInfo">
         <div className="row pt-2">
-          <div className="col-6 pb-4">
+          <div className="col-7 pb-4">
             <h1>{weatherData.city}</h1>
             <ul>
               <li>
-                {weatherData.date}, {weatherData.description}
+                {" "}
+                <FormattedDate date={weatherData.date} />,{" "}
+                {weatherData.description}
               </li>
               <li>
                 Humidity: <strong>{weatherData.humidity}%</strong>, Wind:{" "}
                 <strong>{weatherData.wind} km/h</strong>
               </li>
+              <li>Feels like: {Math.round(weatherData.feelsLike)}°C</li>
             </ul>
           </div>
-          <div className="col-6 d-flex justify-content-end">
+          <div className="col-5 d-flex justify-content-end">
             <div className="clearfix">
               <img
                 src={weatherData.iconUrl}
                 alt={weatherData.description}
-                className="icon mb-4 float-left"
+                className="icon float-left mb-4"
               ></img>
               <span className="temperature">
                 {Math.round(weatherData.temperature)}

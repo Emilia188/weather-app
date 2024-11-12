@@ -1,7 +1,7 @@
 .WeatherInfo h1 {
   font-size: 42px;
-
   font-weight: 600;
+  letter-spacing: 0.1rem;
 }
 .WeatherInfo ul {
   margin: 0;
@@ -12,6 +12,7 @@
   line-height: 1.5;
   list-style: none;
   color: rgba(33, 33, 33, 0.6);
+  letter-spacing: 1px;
 }
 .WeatherInfo strong {
   color: rgb(238, 90, 90);
