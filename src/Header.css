@@ -1,14 +1,14 @@
-.searchForm {
+.Header .searchForm {
   border-bottom: 1px solid #647eb3;
 }
-.searchFormInput {
+.Header .searchFormInput {
   background: #fee295;
   border: none;
   border-radius: 6px;
   font-size: 16px;
   padding: 15px 20px;
 }
-.searchFormButton {
+.Header .searchFormButton {
   background: #647eb3;
   color: white;
   padding: 15px 25px;
