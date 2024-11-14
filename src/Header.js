@@ -14,7 +14,7 @@ export default function Header(props) {
       wind: response.data.wind.speed,
       date: new Date(response.data.time * 1000),
       description: response.data.condition.description,
-      icon: "https://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png",
+      icon: response.data.condition.icon,
       humidity: response.data.temperature.humidity,
       city: response.data.city,
       feelsLike: response.data.temperature.feels_like,
@@ -31,7 +31,6 @@ export default function Header(props) {
   function search() {
     const apiKey = "a93d1e9t3900f64c3459obcda72aab15";
     const apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
-    console.log(apiUrl);
     axios.get(apiUrl).then(handleResponse);
   }
 
