@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
 import axios from "axios";
-import "./Header.css";
+import "./SearchEngine.css";
 
-export default function Header(props) {
+export default function SearchEngine(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
 
@@ -36,7 +36,7 @@ export default function Header(props) {
 
   if (weatherData.ready) {
     return (
-      <div className="Header">
+      <div className="SearchEngine">
         <form className="searchForm" onSubmit={handleSubmit}>
           <div className="row pb-4">
             <div className="col-9">

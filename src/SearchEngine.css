@@ -1,7 +1,7 @@
-.Header .searchForm {
+.SearchEngine .searchForm {
   border-bottom: 1px solid #647eb3;
 }
-.Header .searchFormInput {
+.SearchEngine .searchFormInput {
   background: #fee295;
   border: none;
   border-radius: 6px;
@@ -9,7 +9,7 @@
   letter-spacing: 1px;
   padding: 15px 20px;
 }
-.Header .searchFormButton {
+.SearchEngine .searchFormButton {
   background: #647eb3;
   color: white;
   padding: 15px 25px;

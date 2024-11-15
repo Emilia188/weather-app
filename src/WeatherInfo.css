@@ -32,3 +32,7 @@
   margin-left: 5px;
   font-weight: 400;
 }
+.WeatherInfo .unit a {
+  color: #647eb3;
+  font-weight: bold;
+}
