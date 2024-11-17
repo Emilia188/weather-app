@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 import axios from "axios";
 import "./SearchEngine.css";
 
@@ -38,7 +39,7 @@ export default function SearchEngine(props) {
     return (
       <div className="SearchEngine">
         <form className="searchForm" onSubmit={handleSubmit}>
-          <div className="row pb-4">
+          <div className="row mb-4">
             <div className="col-9">
               <input
                 type="search"
@@ -57,6 +58,7 @@ export default function SearchEngine(props) {
           </div>
         </form>
         <WeatherInfo data={weatherData} />
+        <WeatherForecast />
       </div>
     );
   } else {

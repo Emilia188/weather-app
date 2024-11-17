@@ -1,71 +1,18 @@
 import React from "react";
+import WeatherIcon from "./WeatherIcon";
 import "./WeatherForecast.css";
+
 export default function WeatherForecast() {
   return (
-    <div className="weatherForecast">
-      <div className="weatherForecast-Day">
-        <div className="weatherForecastDate">Thu</div>
-        <img
-          src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png"
-          className="weatherForecastIcon"
-        ></img>
-        <div className="weatherForecastTemperatures">
-          <div className="weatherForecastTemperature">
-            <strong>14º</strong>
+    <div className="WeatherForecast">
+      <div className="row">
+        <div className="col">
+          <div className="WeatherForecast-day mb-1">Mon</div>
+          <WeatherIcon code="rain-day" size={42} />
+          <div className="WeatherForecast-temperatures mt-1 mb-4">
+            <span className="WeatherForecast-temperature-max">20°</span>
+            <span className="WeatherForecast-temperature-min">10°</span>
           </div>
-          <div className="weatherForecastTemperature">5º</div>
-        </div>
-      </div>
-      <div className="weatherForecast-Day">
-        <div className="weatherForecastDate">Fri</div>
-        <img
-          src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png"
-          className="weatherForecastIcon"
-        ></img>
-        <div className="weatherForecastTemperatures">
-          <div className="weatherForecastTemperature">
-            <strong>14º</strong>
-          </div>
-          <div className="weatherForecastTemperature">5º</div>
-        </div>
-      </div>
-      <div className="weatherForecast-Day">
-        <div className="weatherForecastDate">Sat</div>
-        <img
-          src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png"
-          className="weatherForecastIcon"
-        ></img>
-        <div className="weatherForecastTemperatures">
-          <div className="weatherForecastTemperature">
-            <strong>14º</strong>
-          </div>
-          <div className="weatherForecastTemperature">5º</div>
-        </div>
-      </div>
-      <div className="weatherForecast-Day">
-        <div className="weatherForecastDate">Sun</div>
-        <img
-          src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png"
-          className="weatherForecastIcon"
-        ></img>
-        <div className="weatherForecastTemperatures">
-          <div className="weatherForecastTemperature">
-            <strong>14º</strong>
-          </div>
-          <div className="weatherForecastTemperature">5º</div>
-        </div>
-      </div>
-      <div className="weatherForecast-Day">
-        <div className="weatherForecastDate">Mon</div>
-        <img
-          src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png"
-          className="weatherForecastIcon"
-        ></img>
-        <div className="weatherForecastTemperatures">
-          <div className="weatherForecastTemperature">
-            <strong>14º</strong>
-          </div>
-          <div className="weatherForecastTemperature">5º</div>
         </div>
       </div>
     </div>
