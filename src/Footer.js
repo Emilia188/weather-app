@@ -3,7 +3,7 @@ import "./Footer.css";
 
 export default function Footer() {
   return (
-    <div className="Footer">
+    <div className="Footer mt-2">
       This project was coded by{" "}
       <a href="https://github.com/Emilia188" target="_blank" rel="noreferrer">
         Emilia Adasiewicz
